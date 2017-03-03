@@ -2,7 +2,7 @@
 lock "3.7.2"
 
 set :application, 'rise_agro'
-set :repo_url, 'git@github.com:devdatta/contactbook.git' # Edit this to match your repository
+set :repo_url, 'git@github.com:rekha014/rise_agro.git' # Edit this to match your repository
 set :branch, :master
 set :deploy_to, '/home/deploy/rise_agro'
 set :pty, true
@@ -10,7 +10,7 @@ set :linked_files, %w{config/database.yml config/application.yml}
 set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system public/uploads}
 set :keep_releases, 5
 set :rvm_type, :user
-set :rvm_ruby_version, 'jruby-1.7.19' # Edit this if you are using MRI Ruby
+set :rvm_ruby_version, 'ruby-2.1.0' # Edit this if you are using MRI Ruby
 
 set :puma_rackup, -> { File.join(current_path, 'config.ru') }
 set :puma_state, "#{shared_path}/tmp/pids/puma.state"
