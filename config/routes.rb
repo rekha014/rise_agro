@@ -13,6 +13,9 @@ Rails.application.routes.draw do
   get '/it_services', to: 'home#it_services', as: 'it_services'
   get '/import_export', to: 'home#import_export', as: 'import_export'
   get '/contruction', to: 'home#contruction', as: 'contruction'
+
+  get 'contact', to: 'contact#new', as: 'contact'
+  post 'contact', to: 'contact#create_mail'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
